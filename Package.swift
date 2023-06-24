@@ -1,14 +1,14 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.8
 
 import PackageDescription
 
-let PathSurveyor =
-    Package(name: "PathSurveyor",
+let ExecutableFinder =
+    Package(name: "ExecutableFinder",
             products: [
-              .library(name: "PathSurveyor", targets: ["PathSurveyor"])
+              .library(name: "ExecutableFinder", targets: ["ExecutableFinder"])
             ],
             targets: [
-              .target(name: "PathSurveyor"),
-              .testTarget(name: "PathSurveyorTests",
-                          dependencies: ["PathSurveyor"])
+              .target(name: "ExecutableFinder"),
+              .testTarget(name: "ExecutableFinderTests",
+                          dependencies: ["ExecutableFinder"])
             ])
